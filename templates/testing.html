@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Testing page :3</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/testing.css') }}">
+{% endblock %}
+
+{% block body %}
+<h1>testing page</h1>
+<p1>the random number is: {{ randomNum }}</p1>
+{% if randomNum == 10 %}
+    <p1>the number is 10</p1>
+{% else %}
+    <p1>the number is not 10</p1>
+{% endif %}
+
+{% for i in range(randomNum) %}
+    <p1 class="numbers">{{ i }}</p1>
+{% endfor %}
+
+<h2>the number input thingy</h2>
+<input id="stringInput" type="text" placeholder="type something">
+
+{% endblock %}

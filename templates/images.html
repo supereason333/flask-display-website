@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>rlly amazing images</title>
+{% endblock %}
+
+{% block body %}
+<h1>Image page</h1>
+
+<div class="display-container">
+    <div class="display-item">
+        <div>
+            <h2>Terraria</h2>
+            <p1>its that yeah</p1>
+        </div>
+        <div>
+            <a href="{{ url_for('static', filename='images/terraria.png') }}" target="_blank">
+                <img src="{{ url_for('static', filename='images/terraria.png') }}" alt="terraria image">
+            </a>
+        </div>
+    </div>
+    <div class="display-item">
+        <div>
+            <h2>Terraria2</h2>
+            <p>its that yeah * 2</p>
+        </div>
+        <div>
+            <a href="{{ url_for('static', filename='images/terraria.png') }}" target="_blank">
+                <img src="{{ url_for('static', filename='images/terraria.png') }}" alt="terraria image">
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}

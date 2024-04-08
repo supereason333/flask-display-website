@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto Mono">
+    {% block head %}{% endblock %}
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <svg version="1.1" baseProfile="full"  width="20" height="20"xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="10" cy="10" r="10" fill="gray" />
+                    <circle cx="5" cy="5" r="6" fill="white" />
+                </svg>
+            </li>
+            <li><a href="{{ url_for('index') }}">home</a></li>
+            <li><a href="{{ url_for('images') }}">images</a></li>
+            <li><a>|</a></li>
+            <li><a href="{{ url_for('photography') }}">gallery</a></li>
+            <li><a>|</a></li>
+            <li><a href="{{ url_for('testing') }}">testing</a></li>
+        </ul>
+    </nav>
+    <main>
+    {% block body %}{% endblock %}
+    </main>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto Mono">
+    {% block head %}{% endblock %}
+</head>
+<body>
+    <a href="{{ url_for('index') }}" class="link">&#8592; back</a>
+    <ul class="gallerymain">
+        <li>
+            <ul class="gallerynav">
+                <li><a href="{{ url_for('photography') }}">photography</a></li>
+                <li><a href="{{ url_for('traditionalart') }}">traditional art</a></li>
+                <li><a href="{{ url_for('digitalart') }}">digital art</a></li>
+                <li><a href="">blender render</a></li>
+                <li><a href="">blah blah 1</a></li>
+                <li><a href="">blah blah 2</a></li>
+            </ul>
+        </li>
+        <li>{% block body %}{% endblock %}</li>
+    </ul>
+</body>
+</html>

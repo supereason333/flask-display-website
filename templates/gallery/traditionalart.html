@@ -1,0 +1,11 @@
+{% extends 'gallery/basegallery.html' %}
+
+{% block head %}
+<title>gallery - traditional art</title>
+{% endblock %}
+
+{% block body %}
+<h1>traditional art</h1>
+<p1>like drawing with pencils and brushes</p1>
+<img src="{{ url_for('static', filename='images/flower.jpeg') }}" alt="a flower" class="gallerydisplay">
+{% endblock %}

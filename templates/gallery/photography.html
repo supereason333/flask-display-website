@@ -1,0 +1,11 @@
+{% extends 'gallery/basegallery.html' %}
+
+{% block head %}
+<title>gallery - photography</title>
+{% endblock %}
+
+{% block body %}
+<h1>photography</h1>
+<p1>some photos</p1>
+<img src="{{ url_for('static', filename='images/flower.jpeg') }}" alt="a flower" class="gallerydisplay">
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>back at where you started</title>
+{% endblock %}
+
+{% block body %}
+<h1>Hello!</h1>
+<p1>This is a website for things that I have created<br><br>this is an image of my cat:</p1>
+<img src="{{ url_for('static', filename='images/cat.jpg') }}" alt="my cat" class="image" style="width: 30rem">
+{% endblock %}

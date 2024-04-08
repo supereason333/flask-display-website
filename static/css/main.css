@@ -1,0 +1,76 @@
+/* styling for the nav bar */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline-block;
+}
+nav li:hover, .gallerynav li:hover, .link:hover {
+    text-decoration: underline;
+}
+nav ul li a, .gallerynav li a, .link {
+    text-decoration: none;
+    padding: 0.5rem;
+    font-family: 'roboto mono';
+}
+.link {
+    padding: 0;
+}
+ul {
+    list-style-type: none;
+}
+/* styling for the gallary */
+.gallerymain {
+    padding: 0;
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    column-gap: 1rem;
+}
+.gallerynav{
+    margin: 0;
+    display: block;
+    padding: 0;
+    padding-right: 1rem;
+    height: 100%;
+}
+.gallerydisplay {
+    max-width: 100%;
+    padding: 1rem;
+}
+/* styling for the containers */
+.display-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.display-item {
+    width: 40rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+.display-item img {
+    width: 100%;
+}
+/* styling for main */
+main {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80rem;
+}
+/* styling for images */
+.image {
+    max-width: 100%;
+    padding: 0.5rem;
+}
+/* styling for all text */
+h1, h2 {
+    font-family: 'roboto mono';
+}
+p, p1 {
+    font-family: Helvetica;
+    display: block;
+}
