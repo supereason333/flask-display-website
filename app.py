@@ -1,4 +1,4 @@
-from flask import Flask, render_template, url_for
+from flask import Flask, render_template, url_for, request
 import random
 
 app = Flask(__name__)
@@ -13,7 +13,8 @@ def images():
 
 @app.route('/process', methods=['POST'])
 def process():
-    return ''
+    inputString = request.form['stringInput']
+    return inputString
 
 @app.route('/testing', methods=['GET', 'POST'])
 def testing():

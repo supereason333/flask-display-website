@@ -19,6 +19,12 @@
 {% endfor %}
 
 <h2>the number input thingy</h2>
-<input id="stringInput" type="text" placeholder="type something">
+<form method="post" action="/process">
+    <input id="stringInputField" type="text" name="stringInput" placeholder="type something">
+    <button id="stringInputbutton" type="submit">submit</button>
+</form>
+{% if inputString %}
+    <p1>the string you inputed is {{ inputString }}</p1>
+{% endif %}
 
 {% endblock %}

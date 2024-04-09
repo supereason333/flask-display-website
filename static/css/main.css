@@ -1,3 +1,7 @@
+/* fucking pu things */
+img:hover {
+    display: none;
+}
 /* styling for the nav bar */
 nav ul {
     list-style-type: none;
