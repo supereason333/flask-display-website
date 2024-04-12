@@ -19,12 +19,14 @@
 {% endfor %}
 
 <h2>the number input thingy</h2>
-<form method="post" action="/process">
-    <input id="stringInputField" type="text" name="stringInput" placeholder="type something">
-    <button id="stringInputbutton" type="submit">submit</button>
+<form method="post" action="/testing">
+    <input type="text" name="stringInputField" placeholder="type something">
+    <button type="submit">submit</button>
 </form>
 {% if inputString %}
     <p1>the string you inputed is {{ inputString }}</p1>
+{% else %}
+    <p1>you have not inputed anything</p1>
 {% endif %}
 
 {% endblock %}

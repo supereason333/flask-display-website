@@ -13,12 +13,15 @@ def images():
 
 @app.route('/process', methods=['POST'])
 def process():
-    inputString = request.form['stringInput']
-    return inputString
+    return 'amogus'
 
 @app.route('/testing', methods=['GET', 'POST'])
 def testing():
-    return render_template('testing.html', randomNum = random.randint(1, 10))
+    try:
+        inputString = request.form['stringInputField']
+    except:
+        inputString = None
+    return render_template('testing.html', randomNum = random.randint(1, 10), inputString = inputString)
 
 # gallary pages
 
